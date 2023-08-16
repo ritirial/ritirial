@@ -1,0 +1,12 @@
+<h3>Habilidades y competencias</h3>
+<ul *ngFor="let skill of skillsAndCompetences">
+    <li>
+        <tr>
+            <td>{{ skill.habilidad }}</td>
+            <td>
+                <progress max="100" value="{{ skill.porcentaje }}"></progress>
+            </td>
+        </tr>
+
+    </li>
+</ul>
